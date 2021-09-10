@@ -34,7 +34,7 @@
         <section class="section">
           <div class="container">
             <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：1</span>さぁゲームを始めよう！</h2>
-            <p class="text-center">監視カメラを見てみよう<br>
+            <p class="text-center">監視カメラをハッキングしよう<br>
               教室からは見えない位置に紙が貼ってあった...<br>
               おそらくこれにパスワードが隠れているはず</p>
             <p class="text-center">困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。</p>
@@ -86,9 +86,8 @@ Youtube貼り付けここまで -->
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">STAGE：１  クリア！</div>
-              <div class="clear-message__content">監視カメラのロックが外れた!<br>
-                さぁ、次はパソコンのパスワードだ<br>
-                カメラを動かしてヒントを探そう</div>
+              <div class="clear-message__content">監視カメラは使えるようになった!<br>
+                さぁ、次はエレベーターを使えるようにしよう</div>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -108,8 +107,8 @@ Youtube貼り付けここまで -->
           <div class="section">
             <div class="container">
               <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>パソコンのロックを外せ!</h2>
-              <p class="text-center">カメラで見ていると、教室に不思議な紙が貼ってある<br>
-                多分これがパスワードのヒントだろう...<br>
+              <p class="text-center">エレベーターの中に不思議な紙が貼ってある<br>
+                多分これが動かすためののヒントだろう...<br>
                 さぁ、謎を解こう!</p>
             </div>
           </div>
@@ -182,8 +181,8 @@ Youtube貼り付けここまで -->
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">STAGE：2　クリア！</div>
-              <div class="clear-message__content">後は地下室を<br>
-                開けるだけ、急ごう!</div>
+              <div class="clear-message__content">後は校長先生のパソコンで<br>
+                地下室の鍵を開けるだけ、急ごう!</div>
                 <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -199,8 +198,8 @@ Youtube貼り付けここまで -->
         <section class="section">
           <div class="container">
             <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>地下室を開放しよう!</h2>
-            <p class="text-center">どうやらこのパソコンで地下室の施錠がされていた<br>
-              認証コードを入れれば生徒を救出できるらしい<br>
+            <p class="text-center">どうやらパソコンに認証コードを入れれば<br>
+              地下室の鍵が開くらしい...この検索履歴にヒントが隠れている<br>
               この文章をヒントに答えを導き出そう!</p>
             <figure class="image__container">
               <img src="assets/images/stage.png" alt="">
@@ -237,7 +236,7 @@ Youtube貼り付けここまで -->
 
         <section class="section bg-color--keycolor">
           <div class="container">
-            <h2 class="section-title"><span class="section-title__stage">STAGE：3</span>キーワードを入力</h2>
+            <h2 class="section-title"><span class="section-title__stage">STAGE：3</span>キーワードを入力(ひらがな)</h2>
             <answer-input v-bind:correct="correctAnswer['stage3']['q2']" v-on:answer-input="answerInput($event, 'stage3', 2, 'final')"></answer-input>
             <a class="link-hint" href="hint3.html" target="hint3">ヒントをみる ></a>
           </div>
