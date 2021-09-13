@@ -198,7 +198,7 @@ button {
           transform: rotate(90deg);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  fill: #00496D;
+  fill: #009254;
   width: 12px;
   height: 24px;
 }
@@ -239,7 +239,7 @@ button {
 * Color
 *********************/
 .bg-color--keycolor {
-  background-color: #39b54a;
+  background-color: #00496D;
 }
 
 .bg-color--subcolor {
